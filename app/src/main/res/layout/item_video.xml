@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    >
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/googleg_standard_color_18"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="1dp" />
+
+    <ImageView
+        android:id="@+id/imageView_flow"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/img_avatar"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-15dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_plus_red_50" />
+
+    <ImageView
+        android:id="@+id/imageView_like"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/imageView_flow"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/ic_favorite_red_50" />
+
+    <TextView
+        android:id="@+id/txt_like"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/imageView_like"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="1025"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+
+    <ImageView
+        android:id="@+id/imageView_comment"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/txt_like"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/ic_comment_50" />
+
+    <TextView
+        android:id="@+id/txt_comment"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/imageView_comment"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="104"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/imageView_share"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/txt_comment"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/ic_share_50" />
+
+    <TextView
+        android:id="@+id/txt_share"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/imageView_share"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="104"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/image_music"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/ic_music_white_50"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/txt_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:text="Ánh nắng của anh"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        />
+
+
+</RelativeLayout>

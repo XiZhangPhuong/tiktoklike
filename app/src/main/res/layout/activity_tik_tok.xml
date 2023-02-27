@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".TikTokActivity">
+
+
+    <VideoView
+        android:id="@+id/videoView_tiktok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_avatar_tiktok"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="300dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/googleg_standard_color_18"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="1dp" />
+
+    <ImageView
+        android:id="@+id/imageView_like"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/img_avatar_tiktok"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/ic_favorite_red_50" />
+
+    <TextView
+        android:id="@+id/txt_like_tiktok"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView_like"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="335.0K"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/imageView_comment_tiktok"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/txt_like_tiktok"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/ic_comment_50" />
+
+    <TextView
+        android:id="@+id/txt_comment_tiktok"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/imageView_comment_tiktok"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="2210"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+    <ImageView
+        android:id="@+id/imageView_share_tiktok"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/txt_comment_tiktok"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/ic_share_50" />
+
+    <TextView
+        android:id="@+id/txt_share_tiktok"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/imageView_share_tiktok"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="104"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_music_tiktok"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_launcher_background"
+        app:civ_border_color="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/ic_music_white_50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:text="Lay All Your Love On Me - ABBA Lay All Your Love On Me - ABBA"
+        android:id="@+id/txt_music_tiktok"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xem bản dịch"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_above="@id/imageView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/txt_hashtag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/txt_translate"
+        android:text="#fifaworldcup2022        Xem thêm" />
+
+    <TextView
+        android:id="@+id/txt_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/txt_hashtag"
+        android:text="England national team" />
+
+    <TextView
+        android:id="@+id/txt_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/txt_content"
+        android:textStyle="italic|bold"
+        android:text="VanVanPhuong" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_user"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/txt_content"
+
+        />
+
+
+
+
+
+     <ImageView
+         android:id="@+id/img_view_tiktok"
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:layout_marginTop="50dp"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="10dp"
+         app:srcCompat="@drawable/ic_baseline_preview_24"
+         />
+
+    <TextView
+        android:id="@+id/txt_view_tiktok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:text=""
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="53dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@drawable/custom_edt"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:hint="Fake Mobile App in Java"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="13dp"
+        android:paddingStart="70dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

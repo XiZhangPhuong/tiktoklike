@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "414936105861",
+    "project_id": "tiktoklike-b422e",
+    "storage_bucket": "tiktoklike-b422e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414936105861:android:d486779784f7653972faec",
+        "android_client_info": {
+          "package_name": "com.example.tiktoklike"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414936105861-rqqnmcq63mqp64rhktr0fqcjhn20iefh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH54GLexTX1XGhqo2G4aZIYgWlqKTEc9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414936105861-rqqnmcq63mqp64rhktr0fqcjhn20iefh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
